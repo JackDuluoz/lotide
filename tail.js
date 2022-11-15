@@ -6,16 +6,15 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual("Lighthouse Labs", "Lighthouse Labs");
-assertEqual(1, 4);
-console.log("------------------------------------------------------------------");
+//assertEqual("Lighthouse Labs", "Bootcamp");
+//assertEqual(1, 1);
+//assertEqual("Lighthouse Labs", "Lighthouse Labs");
+//assertEqual(1, 4);
+//console.log("------------------------------------------------------------------");
 
 const tail = function(input) {
   let newArray = Array.from(input);
   newArray.splice(0, 1);
-  newArray.toString();
   return newArray;
 };
 
