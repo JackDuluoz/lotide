@@ -1,34 +1,40 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(`🟢️🟢️🟢️ Assertion Passed: ${actual} === ${expected}`);
+    console.log("True");
   } else {
-    console.log(`🛑️🛑️🛑️ Assertion Failed: ${actual} !== ${expected}`);
+    console.log("False");
   }
 };
-const eqArrays = function (firstArray, secondArray) {
-  let firstTypes = []
-  let secondTypes = []
-  let firstString
-  let secondString
+const eqArrays = function(firstArray, secondArray) {
+  let firstTypes = [];
+  let secondTypes = [];
+  let firstString;
+  let secondString;
+  let truth;
   for (let fa = 0; fa < firstArray.length; fa++) {
-    firstTypes.push(typeof firstArray[fa])
+    firstTypes.push(typeof firstArray[fa]);
   }
   for (let sa = 0; sa < secondArray.length; sa++) {
-    secondTypes.push(typeof secondArray[sa])
+    secondTypes.push(typeof secondArray[sa]);
   }
-  let firstTypesString = firstTypes.join(", ")
-  let secondTypesString = secondTypes.join(", ")
+  let firstTypesString = firstTypes.join(", ");
+  let secondTypesString = secondTypes.join(", ");
   if (firstTypesString === secondTypesString) {
     firstString = firstArray.join("");
     secondString = secondArray.join("");
   } else {
-    firstString = firstTypesString
-    secondString = secondTypesString
+    firstString = "one thing";
+    secondString = "another thing";
   }
-  return assertEqual(firstString, secondString);
+  if (firstString === secondString) {
+    truth = true;
+  } else {
+    truth = false;
+  }
+  return truth;
 };
-eqArrays([1, 2, 3], [1, 2, 3]);
-eqArrays([1, 2, 3], [3, 2, 1]);
-console.log("----------------------------------------");
-eqArrays(["1", "2", "3"], ["1", "2", "3"]);
-eqArrays(["1", "2", "3"], ["1", "2", 3]);
+
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
+assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), true); // => false
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true); // => false
