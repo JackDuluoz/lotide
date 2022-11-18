@@ -1,34 +1,13 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`🟢️🟢️🟢️ Assertion Passed: ${actual} === ${expected}`);
+const assertArraysEqual = function (firstArray, secondArray) {
+  const inspect = require('util').inspect;
+  if (inspect(firstArray) === inspect(secondArray)) {
+    console.log(`🟢️ Assertion Passed: ${inspect(firstArray)} === ${inspect(secondArray)}`)
   } else {
-    console.log(`🛑️🛑️🛑️ Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`🛑️ Assertion Failed: ${inspect(firstArray)} !== ${inspect(secondArray)}`)
   }
-};
-const eqArrays = function (firstArray, secondArray) {
-  let firstTypes = []
-  let secondTypes = []
-  let firstString
-  let secondString
-  for (let fa = 0; fa < firstArray.length; fa++) {
-    firstTypes.push(typeof firstArray[fa])
-  }
-  for (let sa = 0; sa < secondArray.length; sa++) {
-    secondTypes.push(typeof secondArray[sa])
-  }
-  let firstTypesString = firstTypes.join(", ")
-  let secondTypesString = secondTypes.join(", ")
-  if (firstTypesString === secondTypesString) {
-    firstString = firstArray.join("");
-    secondString = secondArray.join("");
-  } else {
-    firstString = firstTypesString
-    secondString = secondTypesString
-  }
-  return assertEqual(firstString, secondString);
-};
-eqArrays([1, 2, 3], [1, 2, 3]);
-eqArrays([1, 2, 3], [3, 2, 1]);
-console.log("----------------------------------------");
-eqArrays(["1", "2", "3"], ["1", "2", "3"]);
-eqArrays(["1", "2", "3"], ["1", "2", 3]);
+}
+assertArraysEqual([1, 2, 3], [1, 2, 3]); // => true
+assertArraysEqual([1, 2, 3], [3, 2, 1]); // => false
+assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); // => true
+assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // => false
+console.log("")
