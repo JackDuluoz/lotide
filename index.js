@@ -28,7 +28,7 @@ module.exports = {
   findKey,
   findKeyByValue,
   flatten,
-  head: head,
+  head,
   letterPositions,
   map,
   middle,
