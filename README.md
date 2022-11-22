@@ -26,20 +26,38 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-  assertArraysEqual: Fundamentally the same as eqArrays.
-  assertEqual: Asserts if two primitive type values are identical.
-  assertObjectsEqual: Fundamentally the same as eqObjects. 
-  countLetters: Returns the count of letters in a string as an object.  
-  countOnly: Returns the count of specified values in an array as an object.
-  eqArrays: Asserts if two arrays are identical using inspect.
-  eqObjects: Asserts if two objects are identical using inspect.
-  findKey: Finds the first key of a specified value in an object using callback.
-  findKeyByValue: Finds the first key of a value in an object without callback.
-  flatten: Returns nested arrays as one falltened array.
-  head: Returns only the first element in an array.
-  letterPositions:
-  map: Iterates over an array and allows callback functions to be performed on     each element, producing a new, modified array of the same length.
-  middle: Returns the middle index/indices of an array.
-  tail: Omits the first element of an array and returns the new array.
-  takeUntil: Pushes elements of an array into a new array until a desired element is reached.
-  without: Given two array inputs, a first array is relieved of elements also contained in the second array.
+* assertArraysEqual: Fundamentally the same as eqArrays.
+
+* assertEqual: Asserts if two primitive type values are identical.
+
+* assertObjectsEqual: Fundamentally the same as eqObjects. 
+
+* countLetters: Returns the count of letters in a string as an object. 
+
+* countOnly: Returns the count of specified values in an array as an      object.
+
+* eqArrays: Asserts if two arrays are identical using inspect.
+
+* eqObjects: Asserts if two objects are identical using inspect.
+
+* findKey: Finds the first key of a specified value in an object using callback.
+
+* findKeyByValue: Finds the first key of a value in an object without callback.
+
+* flatten: Returns nested arrays as one falltened array.
+
+* head: Returns only the first element in an array.
+
+* letterPositions: Provides the indexes for all occurrences of a letter in a string.
+
+* map: Iterates over an array and allows callback functions to be performed on each element, producing a new, modified array of the same length.
+
+* middle: Returns the middle index/indices of an array.
+
+* tail: Omits the first element of an array and returns the new array.
+
+* takeUntil: Pushes elements of an array into a new array until a desired element is reached.
+
+* titleCase: converts a string to titleCase.
+
+* without: Given two array inputs, a first array is relieved of elements also contained in the second array.

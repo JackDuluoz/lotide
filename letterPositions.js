@@ -17,4 +17,4 @@ const letterPositions = function(sentence) {
 
 module.exports = letterPositions
 
-// console.log(letterPositions("Hello Michael"));
+console.log(letterPositions("Hello Michael"));

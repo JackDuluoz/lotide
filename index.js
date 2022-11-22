@@ -15,6 +15,7 @@ const map = require('./map');
 const middle = require('./middle');
 const tail = require('./tail');
 const takeUntil = require('./takeUntil');
+const titleCase = require('./titleCase');
 const without = require('./without');
 
 module.exports = {
@@ -34,6 +35,7 @@ module.exports = {
   middle,
   tail,
   takeUntil,
+  titleCase,
   without
 };
 
