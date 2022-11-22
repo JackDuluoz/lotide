@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@broadsword/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "lodash clone with alternative functionalities",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/JackDuluoz/lotide.git"
   },
-  "author": "",
+  "author": "broadsword",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JackDuluoz/lotide/issues"
