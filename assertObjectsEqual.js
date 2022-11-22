@@ -19,28 +19,30 @@ const assertObjectsEqual = function(object1, object2) {
   return message;
 };
 
-const ab1 = { a: "1", b: "2" };
-const ab2 = { a: "1", b: "2" };
+module.exports = assertObjectsEqual
 
-const bc1 = { b: "1", c: "2" };
-const bc2 = { b: "2", c: "1" };
+// const ab1 = { a: "1", b: "2" };
+// const ab2 = { a: "1", b: "2" };
 
-const de = { d: "1", e: "2" };
-const ed = { e: "1", d: "2" };
+// const bc1 = { b: "1", c: "2" };
+// const bc2 = { b: "2", c: "1" };
 
-const fg = { f: "1", g: "2" };
-const gf = { g: "2", f: "1" };
+// const de = { d: "1", e: "2" };
+// const ed = { e: "1", d: "2" };
 
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
+// const fg = { f: "1", g: "2" };
+// const gf = { g: "2", f: "1" };
 
-const cd2 = { c: "1", d: ["2", 3, 4] };
+// const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: ["2", 3], c: "1" };
 
-console.log("                ");
-console.log(assertObjectsEqual(ab1, ab2));
-console.log(assertObjectsEqual(bc1, bc2));
-console.log(assertObjectsEqual(de, ed));
-console.log(assertObjectsEqual(fg, gf));
-console.log("                ");
-console.log(assertObjectsEqual(cd, dc));
-console.log(assertObjectsEqual(cd, cd2));
+// const cd2 = { c: "1", d: ["2", 3, 4] };
+
+// console.log("                ");
+// console.log(assertObjectsEqual(ab1, ab2));
+// console.log(assertObjectsEqual(bc1, bc2));
+// console.log(assertObjectsEqual(de, ed));
+// console.log(assertObjectsEqual(fg, gf));
+// console.log("                ");
+// console.log(assertObjectsEqual(cd, dc));
+// console.log(assertObjectsEqual(cd, cd2));

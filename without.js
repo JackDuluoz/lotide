@@ -15,15 +15,18 @@ const without = function(source, itemsToRemove) {
       }
     }
   }
-  console.log("Source:", source);
-  console.log("Items to Remove:", itemsToRemove);
-  console.log("Shared Inputs:", sameInput);
-  console.log("Without Shared Inputs:", output);
-  console.log("Confirm Source Unchanged:", source);
+  // console.log("Source:", source);
+  // console.log("Items to Remove:", itemsToRemove);
+  // console.log("Shared Inputs:", sameInput);
+  return "Without Shared Inputs:", output;
+  // console.log("Confirm Source Unchanged:", source);
 };
-without([1, 2, 3], [1]);
-console.log("-----------------------------------------");
-without(["1", "2", "3"], [1, 2, "3"]);
-console.log("-----------------------------------------");
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]);
+
+module.exports = without
+
+// console.log(without([1, 2, 3], [1]));
+// console.log("");
+// console.log(without(["1", "2", "3"], [1, 2, "3"]));
+// console.log("");
+// const words = ["hello", "world", "lighthouse"];
+// console.log(without(words, ["lighthouse"]));

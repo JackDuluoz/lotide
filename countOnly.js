@@ -1,16 +1,16 @@
-const firstNames = [
-  "Karl",
-  "Salima",
-  "Agouhanna",
-  "Fang",
-  "Kavith",
-  "Jason",
-  "Fang",
-  "Fang",
-  "Salima",
-  "Fang",
-  "Joe"
-];
+// const firstNames = [
+//   "Karl",
+//   "Salima",
+//   "Agouhanna",
+//   "Fang",
+//   "Kavith",
+//   "Jason",
+//   "Fang",
+//   "Fang",
+//   "Salima",
+//   "Fang",
+//   "Joe"
+// ];
 
 const countOnly = function(allItems, itemsToCount) {
   let result = {};
@@ -30,4 +30,6 @@ const countOnly = function(allItems, itemsToCount) {
   return result;
 };
 
-console.log(countOnly(firstNames, { "Jason": true, "Karima": true, "Salima": false, "Fang": true, "Agouhanna": true }));
+module.exports = countOnly
+
+// console.log(countOnly(firstNames, { "Jason": true, "Karima": true, "Salima": false, "Fang": true, "Agouhanna": true }));
